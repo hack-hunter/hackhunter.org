@@ -7,16 +7,18 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="Hunter College High School's student-run high school hackathon.">
         <link rel="stylesheet" href="./css/styles.css" type="text/css" />
+        <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
    </head>
    <body>
        <main>
-           <section id="home">
-                <h1>
-                    HackHunter
-                </h1>
+            <section id="home" name="home">
+                <h1>HackHunter</h1>
                 <div id="btn-grid">
                     <div class="btn-grid-item">
-                        <a class="btn outline-btn" href="#" role="button">
+                        <a class="btn outline-btn" id="about-href" href="#about" role="button">
                             ABOUT
                         </a>
                     </div>
@@ -36,7 +38,20 @@
                         </a>
                     </div>
                 </div>
+            </section>
+            <section id="about" name="about">
+               <h2>ABOUT</h2>
+               <div class="about-body">
+                   Body text goes here. i don't know why it's not showing up
+               </div>
            </section>
-       </main>
+        </main>
+        <script>
+            $("#about-href").click(function() {
+                $('html, body').animate({
+                    scrollTop: $("section.about").offset().top
+                }, 500);
+            });
+        </script>
    </body>
 </html>

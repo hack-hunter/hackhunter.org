@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500&display=swap');
 
 body {
     margin: 0;
     padding: 0;
     font-family: 'Space Grotesk', sans-serif;
+    font-weight: 300;
 }
 
 #home {
@@ -11,6 +12,10 @@ body {
     height: 100vh;
 }
 
+#about {
+    background-color: #000000;
+    height: 100vh;
+}
 
 h1 {
     color: white;
@@ -19,6 +24,17 @@ h1 {
     font-size: 100px;
     padding-top: 30vh;
     font-family: 'Space Grotesk', sans-serif;
+    font-weight: 500;
+}
+
+h2 {
+    color: white;
+    font-size: 60px;
+    text-align: center;
+    font-weight: lighter;
+    margin: 0;
+    padding-top: 5vh;
+    font-weight: 500;
 }
 
 .btn-grid-item {
@@ -36,6 +52,7 @@ h1 {
     color: white;
     text-decoration: none;
     font-size: 18px;
+    font-weight: 500;
 }
 
 .outline-btn {
@@ -61,4 +78,10 @@ h1 {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     row-gap: 2vh;
+}
+
+.about-body {
+    font-size: 24px;
+    color: white;
+    margin-left: 5vw;
 }
